@@ -14,3 +14,5 @@ releaseVersionBump := Version.Bump.Bugfix
 releaseVersionFile := file("Version.sbt")
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
+
+publishTo := Some("releases" at "https://some.artifact.repo/") // Will never get this far, but required to build.
